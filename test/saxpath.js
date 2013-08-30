@@ -1,10 +1,9 @@
 var assert       = require('assert');
-var TapeRecorder = require('./tape_recorder');
 
 var fs      = require('fs');
 var sax     = require('sax');
 var saxpath = require('..');
-
+var TapeRecorder = saxpath.TapeRecorder;
 
 describe('SaXPath', function() {
     it('should match /bookstore', function(done) {
